@@ -4,6 +4,7 @@
     --color-description: #AAA;
     --color-unhovered: rgba(255, 255, 255, 0.10);
     --color-hovered: #F1F1F1;
+    --color-border: 18px;
 }
 
 /* Typography */
@@ -34,4 +35,12 @@ h3 {
 
 h3 {
     font-size: 1.6rem;
+}
+
+/* Links */
+a {
+    color: var(--color-heading);
+    display: inline-block;
+    outline: none;
+    text-decoration: solid;
 }
