@@ -1,16 +1,20 @@
 /* color pallet */
 :root {
-    --color-heading: #F1F1F1;
     --color-description: #AAA;
-    --color-unhovered: rgba(255, 255, 255, 0.10);
+    --color-heading-dark: #0F0F0F;
+    --color-heading-light: #F1F1F1;
     --color-hovered: #F1F1F1;
+    --color-unhovered: rgba(255, 255, 255, 0.10);
     --color-border: 18px;
+    --color-border-full: 50%;
+
 }
 
 /* Typography */
 
 html {
     font-size: 62.5%;
+    user-select: none;
 }
 
 body {
@@ -28,7 +32,7 @@ p {
 h1,
 h2,
 h3 {
-    color: var(--color-heading);
+    color: var(--color-heading-light);
     font-weight: 500;
     margin: 1.2rem 0 .4;
 }
@@ -39,8 +43,37 @@ h3 {
 
 /* Links */
 a {
-    color: var(--color-heading);
+    color: var(--color-heading-light);
     display: inline-block;
     outline: none;
     text-decoration: solid;
+}
+
+/* Badges */
+.badge {
+    border-radius: 8px;
+    color: var(--color-heading-light);
+    cursor: pointer;
+    display: inline-block;
+    padding: .5rem 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.badge a {
+    color: inherit;
+}
+
+.badge--dark {
+    background: var(--color-unhovered);
+    color: var(--color-heading-light);
+}
+
+.badge--dark:hover {
+    background: var(--color-hovered);
+    color: var(--color-heading-dark);
+}
+
+.badge--light {
+    background: var(--color-hovered);
+    color: var(--color-heading-dark);
 }
