@@ -77,3 +77,19 @@ a {
     background: var(--color-hovered);
     color: var(--color-heading-dark);
 }
+
+/* List */
+.list {
+    color: var(--color-heading-light);
+    list-style: none;
+    padding-left: 0;
+}
+
+.list--inline .list__item {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.list__item {
+    margin-right: .5rem;
+}
