@@ -93,3 +93,26 @@ a {
 .list__item {
     margin-right: .5rem;
 }
+
+/* Icons */
+.icon {
+    height: 30px;
+    width: 30px;
+}
+
+.icon--small {
+    height: 20px;
+    width: 20px;
+}
+
+.icon--primary {
+    fill: var(--color-heading-light);
+}
+
+.icon--secondary {
+    fill: #0799fa;
+}
+
+.icon--accent {
+    fill: #606060;
+}
