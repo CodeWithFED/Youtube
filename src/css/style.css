@@ -8,7 +8,7 @@
     --color-hovered-alfa: #f1f1f145;
     --color-unhovered: rgba(255, 255, 255, 0.10);
     --border: 18px;
-    --border-full: 50%;
+    --border-rounded: 100vh;
 
 }
 
@@ -104,7 +104,7 @@ a {
 
 .icon-container {
     align-items: center;
-    border-radius: var(--border-full);
+    border-radius: var(--border-rounded);
     display: flex;
     height: 40px;
     justify-content: center;
@@ -174,4 +174,36 @@ a {
 .btn--expanded {
     border: 0;
     border-bottom: 1px solid;
+}
+
+/* Inputs */
+.input-container {
+    border-radius: var(--border-rounded);
+    border: 1px solid var(--color-hovered-alfa);
+    display: flex;
+    overflow: hidden;
+}
+
+.input {
+    background: none;
+    border: none;
+    color: var(--color-heading-light);
+    flex: 1;
+    font-size: 1.6rem;
+    outline: 0;
+    padding: 1rem 0 1rem 2rem;
+    width: 0;
+}
+
+.input::placeholder {
+    color: var(--color-description);
+
+}
+
+.input-container .btn {
+    background: var(--color-unhovered);
+    border-left: 1px solid var(--color-hovered-alfa);
+    border-radius: 0;
+    border: 0;
+    padding: 1rem 2.5rem;
 }

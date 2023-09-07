@@ -8,19 +8,18 @@
     <title>Youtube</title>
   </head>
   <body style="margin: 3rem">
-    <button class="btn btn--primary">Sign up now</button>
-
-    <button class="btn btn--secondary btn--img">
-      <svg class="icon icon--secondary icon--small">
-        <use xlink:href="img/sprite.svg#profile"></use>
-      </svg>
-      Sign up
-    </button>
-
-    <button class="btn btn--primary btn--img btn--block btn--expanded">
-      <svg class="icon icon--primary icon--small">
-        <use xlink:href="img/sprite.svg#expand"></use>
-      </svg>
-    </button>
+    <div class="input-container">
+      <input
+        aria-placeholder=""
+        placeholder="Search"
+        class="input"
+        type="text"
+      />
+      <button type="submit" class="btn">
+        <svg class="icon icon--primary icon--small">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </button>
+    </div>
   </body>
 </html>
